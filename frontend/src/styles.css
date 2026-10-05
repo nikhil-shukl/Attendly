@@ -14,5 +14,32 @@
 .break{font-size:9px;color:#9b7334;background:#fbf4e5;padding:5px 7px;border-radius:4px;margin:4px 0 8px}.day-column article.subject-0{border-color:#167a88;background:#e5f4f4}.day-column article.subject-1{border-color:#b07125;background:#fbf1df}.day-column article.subject-2{border-color:#76539d;background:#f0eaf7}.day-column article.subject-3{border-color:#b35152;background:#f9e9e8}.day-column article.subject-4{border-color:#277452;background:#e4f2ea}.day-column article.subject-5{border-color:#3165a5;background:#e8effa}.day-column article.practical{box-shadow:inset 0 0 0 1px #76539d22}
 .login-copy{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(16,53,66,.78),rgba(19,60,72,.46)),url('https://cdn.validcollege.com/uploads/3e567fd5-e140-4ff6-90df-3fa82129cdbc.jpg') center/cover}.login-copy>*{position:relative;z-index:1}.login-copy:after{content:'TCET · MUMBAI';position:absolute;right:-42px;bottom:25px;z-index:0;font-size:88px;letter-spacing:7px;font-weight:700;color:#fff;opacity:.12;transform:rotate(-90deg);transform-origin:center}
 .login-copy h1{font-size:clamp(40px,3.8vw,58px)!important;line-height:1.08;text-shadow:0 2px 16px #082b36}.login-copy .eyebrow,.login-copy p,.login-copy .brand,.login-copy .proof{color:#fff!important;text-shadow:0 1px 9px #082b36;font-weight:600}
+@media(max-width:700px){
+  body{font-size:14px;background:#fbfcfb}
+  .login{display:block;min-height:100svh;background:#fbfcfb}
+  .login-copy{display:flex;min-height:232px;padding:24px 24px 22px;justify-content:space-between;background-position:center 35%}
+  .login-copy:after{display:none}
+  .login-copy h1{font-size:31px!important;max-width:330px;margin:12px 0 6px}
+  .login-copy p{font-size:13px;line-height:1.45;max-width:315px;margin:0}
+  .login-copy .eyebrow{font-size:8px;letter-spacing:1px}
+  .login-copy .proof{display:none}
+  .login-panel,.v3-panel{display:block;padding:28px 20px 34px;min-height:calc(100svh - 232px)}
+  .v3-card{width:100%;max-width:440px;margin:auto}
+  .v3-card h2{font-size:27px;margin:27px 0 5px}
+  .v3-card .muted{font-size:13px;margin-bottom:20px}
+  .role-choice{gap:9px}
+  .role-choice button{grid-template-columns:40px 1fr 18px;padding:14px 13px}
+  .role-choice b{font-size:14px}.role-choice span{font-size:11px;line-height:1.35}
+  .v3-list{max-height:none}.v3-list .account-card{padding:13px 10px}
+  .account-card b{font-size:13px}.account-card small{font-size:11px}
+  .hint{margin-top:19px}.signup-link{padding-top:14px}
+  header{height:60px;padding:0 14px}.crumb{font-size:11px}.profile{font-size:11px}.profile .dot{display:none}
+  .content{padding:25px 14px}.page-title{margin-bottom:20px}.page-title h1{font-size:25px}.page-title p{font-size:12px}
+  .card{padding:16px}.stats{gap:10px}.grid2{gap:12px}.chart{height:210px}
+  .timetable-grid{margin:0 -16px;border-radius:0}.day-column{padding:15px 16px}.attendance-page{padding:4px 14px}
+  .attendance-card{gap:10px;padding:17px 0}.ring{width:62px;height:62px}.ring:before{width:49px;height:49px}
+  .page-actions{gap:6px}.back-page{padding:7px 8px;font-size:11px}
+  .attendance-modal{padding:12px}.attendance-modal-card{padding:22px 16px;max-height:90svh}
+}
 @media(max-width:850px){.timetable-grid{grid-template-columns:1fr}.day-column{min-height:auto;border-right:0;border-bottom:1px solid #e7ede9}.attendance-card{grid-template-columns:1fr 75px}.attendance-card p{grid-column:1/-1}}
 .inline-form{display:grid;grid-template-columns:1fr 110px auto;gap:8px;margin:20px 0}.inline-form input{margin:0}.setup-list>div{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid #e9eeeb}.setup-list span{color:#73868a;font-size:12px}.list-skeleton{height:45px}.readiness>div{display:flex;gap:12px;align-items:center;padding:15px 0;border-top:1px solid #e9eeeb}.readiness i{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#edf1ef;color:#718188;font-style:normal;font-size:11px}.readiness .check{background:#dff0e4;color:#287052}.readiness b,.readiness small{display:block}.readiness small{color:#829195;font-size:12px;margin-top:3px}
