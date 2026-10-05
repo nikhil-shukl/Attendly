@@ -1,0 +1,23 @@
+{
+  "name": "attendly-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "attendly": "file:..",
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest",
+    "mongoose": "latest",
+    "zod": "latest"
+  }
+}

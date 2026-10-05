@@ -1,0 +1,14 @@
+import React from 'react';
+const Icon=({size=20,children,...props})=><svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{children}</svg>;
+export const Activity=p=><Icon {...p}><path d="M3 12h4l2-7 4 14 2-7h6"/></Icon>;
+export const BookOpen=p=><Icon {...p}><path d="M4 5.5A3 3 0 0 1 7 3h3a2 2 0 0 1 2 2v15a2 2 0 0 0-2-2H7a3 3 0 0 0-3 3zM20 5.5A3 3 0 0 0 17 3h-3a2 2 0 0 0-2 2v15a2 2 0 0 1 2-2h3a3 3 0 0 1 3 3z"/></Icon>;
+export const CalendarCheck=p=><Icon {...p}><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4m8-4v4M3 10h18m-9 5 2 2 4-4"/></Icon>;
+export const ChartNoAxesCombined=p=><Icon {...p}><path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/></Icon>;
+export const ChevronRight=p=><Icon {...p}><path d="m9 18 6-6-6-6"/></Icon>;
+export const ClipboardCheck=p=><Icon {...p}><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 14l2 2 4-5"/></Icon>;
+export const LayoutDashboard=p=><Icon {...p}><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></Icon>;
+export const LogOut=p=><Icon {...p}><path d="M10 17l5-5-5-5m5 5H3m8-8V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6v-1"/></Icon>;
+export const Menu=p=><Icon {...p}><path d="M4 6h16M4 12h16M4 18h16"/></Icon>;
+export const X=p=><Icon {...p}><path d="m6 6 12 12M18 6 6 18"/></Icon>;
+export const ShieldCheck=p=><Icon {...p}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zm-3-10 2 2 4-4"/></Icon>;
+export const Users=p=><Icon {...p}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m17-6a4 4 0 0 0-3-4m-7-1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></Icon>;
