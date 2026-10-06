@@ -1,18 +1,108 @@
-# Attendly
+# 🎓 Attendly
 
-Premium attendance management for campuses. This repository contains a React/Vite frontend and Express/MongoDB API.
+### Smart Attendance Management for TCET
 
-## Quick start
+**Attendly** is a full-stack attendance management platform built for **Thakur College of Engineering & Technology (TCET), Mumbai**. It provides dedicated dashboards for students, faculty, and administrators to manage attendance, timetables, academic records, and reports.
 
-1. Copy `backend/.env.example` to `backend/.env` and set `MONGODB_URI` and a strong `JWT_SECRET`.
-2. Run `npm install`, then `npm install --prefix frontend` and `npm install --prefix backend`.
-3. Seed demo data: `npm run seed` (requires MongoDB).
-4. Run `npm run dev` and open `http://localhost:5173`.
+## 🚀 Live Demo
 
-Demo accounts (development only): `admin@attendly.demo`, `faculty@attendly.demo`, and `student@attendly.demo`; password: `Attendly123!`.
+- 🌐 **Frontend:** https://attendly-buddh369-4525s-projects.vercel.app
+- ⚙️ **Backend API:** https://backend-buddh369-4525s-projects.vercel.app
 
-## Architecture and assumptions
+## ✨ Features
 
-Authentication is JWT bearer-token based for this development slice. User credentials are separate from Student/Faculty profiles. Attendance eligibility is determined by submitted, non-cancelled sessions; records are unique per session/student. Faculty scope is enforced through `FacultyAssignment`. The server calculates percentages rather than persisting them as source-of-truth values.
+### 👨‍🎓 Student
+- View overall and subject-wise attendance
+- Colour-coded attendance percentage
+- Weekly timetable
+- Attendance reports
+- Secure registration and login
 
-The included vertical slice covers login, role-aware dashboards, attendance session creation and marking, student attendance analytics, and server-side scope/duplicate protections. Academic administration, QR presence, report exports, notification delivery, and correction approvals are structured as follow-on modules.
+### 👨‍🏫 Faculty
+- View assigned subjects and divisions
+- Mark student attendance
+- Track Present, Absent, Late & Excused status
+- Review attendance sessions
+- View timetable and reports
+
+### 🛡️ Administrator
+- Campus attendance overview
+- Manage students and faculty
+- Manage departments and subjects
+- Monitor attendance operations
+- Handle correction requests
+
+## 🔐 Demo Accounts
+
+**Password:** `Attendly123!`
+
+| Role | Email |
+|---|---|
+| Admin | `admin@attendly.demo` |
+| Student | `student1@attendly.demo` |
+| Faculty | `faculty1@attendly.demo` |
+
+Demo data includes **6 students, 6 faculty members, 6 subjects, timetable entries, and attendance records.**
+
+## 🛠️ Tech Stack
+
+**Frontend:** React, Vite, JavaScript, CSS, Axios, Lucide React  
+**Backend:** Node.js, Express.js, MongoDB Atlas, Mongoose  
+**Authentication:** JWT, bcrypt  
+**Validation:** Zod  
+**Security:** Helmet, CORS, Express Rate Limit  
+**Deployment:** Vercel  
+**Version Control:** Git & GitHub
+
+## 🏗️ Project Structure
+
+```text
+Attendly/
+├── frontend/
+│   ├── src/
+│   └── package.json
+│
+├── backend/
+│   ├── api/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── scripts/
+│
+└── package.json
+```
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/nikhil-shukl/Attendly.git
+cd Attendly
+
+npm install
+npm install --prefix frontend
+npm install --prefix backend
+
+npm run seed
+npm run dev
+```
+
+> **Note:** The seed command resets the demo database and creates fresh users, subjects, timetable entries, and attendance records.
+
+## ☁️ Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Vercel Serverless Functions
+- **Database:** MongoDB Atlas
+
+## 🎯 Project Focus
+
+Attendly demonstrates a real-world full-stack system with:
+
+**Role-Based Access • Secure Authentication • REST APIs • Academic Management • Attendance Tracking**
+
+---
+
+⭐ **If you find Attendly useful, consider starring the repository!**
+
+**GitHub:** https://github.com/nikhil-shukl/Attendly
